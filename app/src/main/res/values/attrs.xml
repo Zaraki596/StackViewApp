@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomStackView">
+        <attr name="front_layout" format="reference"/>
+        <attr name="back_layout" format="reference"/>
+        <attr name="peekHeight" format="dimension" />
+        <attr name="animationDuration" format="integer" />
+        <attr name="titleText" format="string" />
+        <attr name="subTitleText" format="string" />
+        <attr name="innerCardText" format="string" />
+        <attr name="collapsed_when_open" format="boolean" />
+    </declare-styleable>
+</resources>
