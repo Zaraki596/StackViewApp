@@ -34,9 +34,13 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun initViewState() {
-        binding.containerLevel2.gone()
-        binding.containerLevel3.gone()
-        binding.containerLevel4.gone()
+        /*Container set to invisible instead of gone so that view animations show properly
+        * when it happens, As the layout is not present and we are trying to apply animation on
+        * that. That causes it to not animate on first time and it happens on the subsequent time
+        * so setting a view invisible resolves the issue*/
+        binding.containerLevel2.invisible()
+        binding.containerLevel3.invisible()
+        binding.containerLevel4.invisible()
         binding.level1.containerSummary.gone()
     }
 
